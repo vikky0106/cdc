@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content=
+"width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>City Diagnosis Center</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
+</head>
+<body>
+<div class="wraper">
+<header>
+<div class="col-md-4 pd-top13"><a href="home.html"><img src="img/logo.png" href="home.html" alt="logo"></a></div>
+<div class="col-md-8">
+  <nav class="navbar navbar-default">
+<div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span> </button></div>
+<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+  <ul class="nav navbar-nav">
+  <li><a href="patientEntry.html">Patient Entry</a></li>
+   <li class="active"><a href="home.html">Patients</a></li>
+  <li><a href="docter.html">Docter</a></li>
+  <li><a href="reports.html">Reports</a></li>
+  <li><a href="index.html">Sign Out</a></li>
+  </ul>
+</div>
+
+<!--/.nav-collapse --></nav>
+</div>
+</header>
+<div class="clearfix top_links bodr-btm-black">
+<h3 class="pull-left">Update Patient Info</h3>
+</div>
+<div class="container">
+<form class="form-page">
+<div class="form-group clearfix">
+<div class="col-sm-12 hide" id="message"></div>
+
+<div class="clearfix"></div>
+<div class="col-md-offset-1 col-sm-offset-1 col-lg-offset-1 col-md-4 col-sm-4 col-lg-4 text-right">Patient Name: </div>
+<div class="col-sm-4 col-md-4 col-lg-4">
+  <input id="name" name="name" type="text" placeholder="Name" class="form-control"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="form-group clearfix">
+<div class="col-md-offset-1 col-sm-offset-1 col-lg-offset-1 col-md-4 col-sm-4 col-lg-4 text-right">Age: </div>
+<div class="col-sm-4 col-md-4 col-lg-4">
+  <input id="age" type="text" placeholder="age" class="form-control"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="form-group clearfix">
+<div class="col-md-offset-1 col-sm-offset-1 col-lg-offset-1 col-md-4 col-sm-4 col-lg-4 text-right">sex:</div>
+<div class="col-lg-4 col-md-4 col-sm-4">
+  <select id="sex" class="form-control">
+  <option value="1">Male</option>
+  <option value="2">Female</option>
+  </select>
+</div>
+</div>
+
+<div class="clearfix"> </div>
+    <div class="form-group clearfix">
+      <div class="col-lg-4 col-lg-offset-1 col-md-offset-1  col-sm-offset-1 col-md-4 col-sm-4 text-right">Referred by: </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <select id="referredBy" class="form-control"></select>
+      </div>
+</div>
+
+<div class="clearfix"> </div>
+    <div class="form-group clearfix">
+      <div class="col-lg-4 col-lg-offset-1 col-md-offset-1  col-sm-offset-1 col-md-4 col-sm-4 text-right">Test: </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <select id="test" class="form-control">
+        <option value="1">City</option>
+        <option value="2">X-ray</option>
+        <option value="3">Mri</option>
+        </select>
+      </div>
+</div>
+
+<div class="clearfix"></div>
+<div class="form-group clearfix">
+<div class="col-md-offset-1 col-sm-offset-1 col-lg-offset-1 col-md-4 col-sm-4 col-lg-4 text-right">Date :</div>
+<div class="col-sm-4 col-md-4 col-lg-4">
+  <input id="date" type="text" placeholder="date" class="form-control"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="form-group clearfix">
+<div class="col-md-offset-1 col-sm-offset-1 col-lg-offset-1 col-md-4 col-sm-4 col-lg-4 text-right">Fees: </div>
+<div class="col-sm-4 col-md-4 col-lg-4">
+  <input id="fees" type="text" placeholder="fees" class="form-control"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="form-group clearfix">
+<div class="col-md-offset-1 col-sm-offset-1 col-lg-offset-1 col-md-4 col-sm-4 col-lg-4 text-right"></div>
+<div class="col-sm-4 col-md-4 col-lg-4">
+<input id='save' type="button" class="site_btn mar-rgt20" value="Save">
+<input type="button" class="site_btn" onclick="window.location.href='home.html'" value="CANCEL"></div>
+</div>
+</form>
+</div>
+<footer class="text-center">
+<p></p>
+</footer>
+</div>
+<!-- Insert this line above script imports  -->
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/moment-with-locales.js"></script>
+<script src="js/bootstrap-datetimepicker.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>if (window.module) module = window.module;</script>
+<script src="js/database.js"></script>
+<script src="js/updatePatient.js"></script>
+<script type="text/javascript">
+          $(function () {
+              $('#date').datetimepicker({
+                format: 'DD/MM/YYYY HH:MM'
+              });
+          });
+</script>
+</body>
+</html>

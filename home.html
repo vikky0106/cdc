@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>City Diagnosis Center</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="wraper">
+<header>
+<div class="col-md-4 pd-top13"><a href="home.html"><img src="img/logo.png" href="home.html" alt="logo" style="max-width:512px; max-height:512px"></a></div>
+<div class="col-md-8">
+<nav class="navbar navbar-default">
+<div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span></button></div>
+<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+<ul class="nav navbar-nav">
+<li><a href="patientEntry.html">Patient Entry</a></li>
+<li class="active"><a href="home.html">Patients</a></li>
+<li><a href="docter.html">Docter</a></li>
+<li><a href="reports.html">Reports</a></li>
+<li><a href="index.html">Sign Out</a></li>
+</ul>
+</div>
+</nav>
+</div>
+</header>
+<div class="clearfix top_links">
+<h3 class="pull-left">Patients</h3>
+</div>
+<div>
+<div>
+  <table id="reports" class="table">
+  <thead>
+  <tr>
+  <th>Name</th>
+  <th>Test</th>
+  <th>Referredby</th>
+  <th class="text-center">Date</th>
+  <th>Fees</th>
+  <th class="text-center">Action</th>
+  <th hidden>Name</th>
+  </tr>
+  </thead>
+  <tbody id="tbody">
+
+  </tbody>
+  </table>
+<!-- <div id='loader' class="loader"></div> --></div>
+</div>
+</div>
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/database.js"></script>
+<script src="js/patient.js"></script>
+<script>if (window.module) module = window.module;</script>
+</body>
+</html>
