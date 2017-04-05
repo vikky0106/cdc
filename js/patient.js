@@ -81,7 +81,7 @@ var table = document.getElementById("reports");
                      var year = d1.getFullYear();
                      cell3.innerHTML = date+" "+month+","+year;
                      cell3.className = 'text-center';
-                     cell4.innerHTML = eachData.fees;
+                     cell4.innerHTML = '&#8377;' +eachData.fees;
                      totalfees = totalfees + eachData.fees;
                      tblBody.appendChild(row);
                      table.appendChild(tblBody);

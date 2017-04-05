@@ -1,8 +1,7 @@
 var msg = document.getElementById('message');
-
+var table = document.getElementById("docters");
+var tblBody = document.getElementById("tbody");
 function showAllDocter(){
-  var table = document.getElementById("docters");
-  var tblBody = document.getElementById("tbody");
   $("tbody").children().remove();
   getDocters(function(err, data, info){
      if(err){

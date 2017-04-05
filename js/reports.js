@@ -66,7 +66,7 @@ $('#save').on('click',function(){
                      var year = d1.getFullYear();
                      cell3.innerHTML = date+" "+month+","+year;
                      cell3.style=" width: 20%;"
-                     cell4.innerHTML = eachData.fees;
+                     cell4.innerHTML = '&#8377;' + eachData.fees;
                      totalfees = totalfees + eachData.fees;
                      cell4.style=" width: 15%;"
                      tblBody.appendChild(row);
@@ -80,7 +80,7 @@ $('#save').on('click',function(){
                var cell3 = row.insertCell(3);
                var cell4 = row.insertCell(4);
                cell0.innerHTML = 'Total'.bold();
-               cell4.innerHTML = totalfees;
+               cell4.innerHTML = '&#8377;' + totalfees;
                cell4.style.fontWeight = bold;
                tblBody.appendChild(row);
                table.appendChild(tblBody);
